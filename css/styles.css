@@ -1,0 +1,241 @@
+/*********************************************
+Juanisa's Portfolio - Custom Styles
+
+File Name: styles.css
+
+Created: 8/31/17
+
+Updated: 12/14/22
+
+Version 1.0
+*********************************************/
+
+/* COLORS */
+/*
+Primary  | retro_blue: #6EC6DF
+Second   | classic_grey: #767676
+Teritary | shell_grey: #969696
+Gradient | {background-image: linear-gradient(#80E6F3 20%, #4AC8E2 100%)}
+shadows   | dark: box-shadow: 0px 2px 4px rgba(0,0,0,.50);
+*/
+/*********************************************/
+
+/* GENERAL */
+
+html,body{height:100%;}
+
+body{margin-top:92px;}
+
+/* Text */
+a, p, h1, h2, h3, h4, h5, h6, li, body{font-family: 'Open Sans', sans-serif;}
+
+h1, h2, h3, h4, h6{color:#656565;}
+
+h4{color:#D587F1;}
+
+h5{color:#65BFE4;}
+
+p{color:#969696;}
+
+a{color:#0E7D9C;}
+
+ul{list-style-position: inside;margin:0;padding:0;}
+
+li{list-style-type:none;}
+
+/*********************************************/
+
+/* IE OVERRIDES */
+/*
+ * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
+ *
+ * [1] IE9
+ * [2] IE10+
+ */
+/* 1 */
+.ie9 img[src*=".svg"] {
+  width: 100%;
+}
+/* 2 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src*=".svg"] {
+    width: 100%;
+  }
+}
+
+/*********************************************/
+
+/* MAIN BOOTSTRAP OVERRIDES */
+
+/*********************************************/
+
+/* HOME */
+/* Navbar */
+.navbar.fixed-top.navbar-toggleable-md{/*background-image:linear-gradient(#80c3f3 20%, #4acde2 100%);*/box-shadow: 0px 2px 9px rgba(75,205,226,.55);}
+.subbrand{font-size:18px;padding:0 0 0 5px;width:100%;color:#565656;font-size:24px;}
+.navbar-toggler-right.btn{margin-top:13px;background-color:#6EC6DF;color:#FFFFFF;height:50px;width:50px;}
+.btl.bt-bars{font-size:24px;}
+
+/* Cover */
+#cover-caption{/*background-color:#969696;*/background-image:linear-gradient(#E390F3 -68%, #4acde2 100%);max-height:615px;/*padding:200px 0 200px 0;*/}
+.exp,.amt,.cat{color:#FFFFFF;}
+.exp, .cat{font-size:2rem;font-weight:300;}
+.amt{font-size:3.5rem;font-weight:400;}
+.float-top{position:relative;top:60px;left:14px;}
+.float-show{position:relative;top:-105px;left:138px;}
+.float-bottom{position:relative;top:-104px;left:409px;}
+.float-show img{width:90%;}
+/*.show1{background:url('/img/vsat/ife/ife_vr_shadows.png') no-repeat center center;background-size:825px;width:100%;height:505px;z-index:1050;position:absolute;top:-316px;left:185px;}
+.show2{background:url('/img/show_ex2.png') no-repeat center center;background-size:238px;width:100%;height:508px;z-index:1051;position:absolute;top:-158px;left:-196px;}*/
+
+/*********************************************/
+
+/* Animations */
+.whole{-vendor-animation-duration: 1s;-vendor-animation-delay: 1s;-webkit-animation-duration: 1s;-webkit-animation-delay: 1s;}
+.exp{-vendor-animation-duration: 3s;-vendor-animation-delay: 3s;-webkit-animation-duration: 3s;-webkit-animation-delay: 3s;}
+.amt{-vendor-animation-duration: 3s;-vendor-animation-delay: 2s;-webkit-animation-duration: 3s;-webkit-animation-delay: 2s;}
+.cat{-vendor-animation-duration: 3s;-vendor-animation-delay: 1s;-webkit-animation-duration: 3s;-webkit-animation-delay: 2s;}
+.float-show{-vendor-animation-duration: 5s;-vendor-animation-delay: 3s;-webkit-animation-duration: 5s;-webkit-animation-delay: 3s;}
+.float-bottom{-vendor-animation-duration: 4s;-vendor-animation-delay: 3s;-webkit-animation-duration: 4s;-webkit-animation-delay: 3s;}
+
+/* Media Queries */
+@media screen and (max-width:580px){.exp, .cat{font-size:.75rem;font-weight:300;}}
+@media screen and (max-width:580px){.amt{font-size:1rem;font-weight:400;}}
+@media screen and (max-width:580px){.float-top{position:relative;top:60px;left:3px;}}
+@media screen and (max-width:580px){.float-show{position:relative;top:-9px;left:47px;}}
+@media screen and (max-width:580px){.float-bottom{position:relative;top:-13px;left:141px;}}
+
+@media screen and (max-width:579px) and (min-width:1199px){.exp, .cat{font-size:1.5rem;font-weight:300;}}
+@media screen and (max-width:579px) and (min-width:1199px){.amt{font-size:2.5rem;font-weight:400;}}
+@media screen and (max-width:579px) and (min-width:1199px){.float-top{position:relative;top:60px;left:14px;}}
+@media screen and (max-width:579px) and (min-width:1199px){.float-show{position:relative;top:-57px;left:72px;}}
+@media screen and (max-width:579px) and (min-width:1199px){.float-bottom{position:relative;top:-67px;left:321px;}}
+
+/* Body Content */
+/*#projects{margin-top:135px;}*/
+#projects h1{font-size:38px;font-weight:300;margin-top:20px;margin-bottom:20px;color:#868585;/*-webkit-background-clip:text;background-image:linear-gradient(to left, #80E6F5 9%, #80c3f4 85%, #4AC8E2 100%);-webkit-text-fill-color:transparent;*/}
+#projects h2{font-size:25px;color:#656565;}
+#projects img{margin-bottom:25px;/*width:90%;margin-left:60px;*/}
+.row.work{margin:61px 0 30px 0;/*padding:30px 0 30px 0;/*box-shadow: 0px 2px 9px rgba(75,205,226,.55);border-radius:7px;*/}
+/*#projects .vsat-right, #projects .nike-right{margin-top:90px;}*/
+/*.row.vsat, .row.nike{margin:30px 0 30px 0;padding:30px 0 30px 0;/*box-shadow: 0px 2px 9px rgba(75,205,226,.55);border-radius:7px;}*/
+.btn{/*background-color:#6EC6DF;*//*background-image:linear-gradient(#80E6F3 20%, #4AC8E2 100%);*/background-image: linear-gradient(#80E6F5 9%, #80c3f4 85%, #4AC8E2 100%);color:#FFFFFF;border:2px solid rgba(255,255,255,.35);box-shadow: 0px 2px 9px rgba(75,205,226,.55);}
+.btn:hover{background-image:linear-gradient(to left, #80E6F5 9%, #80c3f4 85%, #4AC8E2 100%);border:2px solid rgba(255,255,255,.35);}
+
+
+/* ALL CASES */
+#role, #ia, #dev{background-color:#FBFBFB;}
+.case-title{color:#565656;font-size:2rem;padding-bottom:20px;}
+.problem,.solution,.sol-type,.prod-type{color:#656565;}
+.goal{font-size:2rem;font-weight:300;color:#FFFFFF;padding-top:10px;}
+.statement{font-size:1.5rem;font-weight:400;color:#FFFFFF;padding-top:15px;}
+#probs, #role, #rd, #ia, #wires, #proto, #dev, #summary{padding-top:40px;padding-bottom:40px;}
+/*#probs div, #role div, #rd div, #ia div, #wires div, #proto div, #dev div{margin-bottom:20px;}*/
+#probs p, #role p, #rd p, #ia p, #wires p, #proto p, #dev p, #summary p{color:#929191;font-weight:300;font-size: 1.25rem;}
+/*#probs p span, #role p span, #rd p span, #ia p span, #wires p span, #proto p span, #dev p span{font-weight:400;}*/
+figcaption{color:#929191;font-weight:300;}
+
+/* VIASAT */
+.row.intro{padding-bottom:20px;}
+.row.persona, .row.journey{padding-top:27px;}
+.labels{font-weight:300;padding-top:20px;color:#848484;}
+
+/* Cover */
+#cover .vsat-goal{-vendor-animation-duration: 1s;-vendor-animation-delay: 1s;-webkit-animation-duration: 1s;-webkit-animation-delay: 1s;}
+.vsat-goal{padding-bottom:25px;padding-top:20px;}
+.vsat-goal p, .vsat-goal .disclaimer{color:#FFFFFF;}
+.vsat-goal .disclaimer{padding-top:25px;font-size:1rem;font-weight:400;}
+.vsat-goal p{font-weight:300;}
+.vsat-logo{width:24%;}
+figure img{width:100%;}
+figure{margin-bottom:45px;}
+figcaption{margin-top:5px;}
+/*.va{width:37%}*/
+.post{width:25%}
+.post-point{color: #5bc0de !important;font-size: 1.55rem !important;padding:20px 0 20px 0;text-align:center;}
+.quote{padding:20px 0 40px 0;}
+
+/* Role */
+.apps ul{padding-top:20px;padding-bottom:20px;}
+.apps ul li{display: inline;}
+.apps li img{width:22%;/*width:10%;*/padding:0 34px 0 71px;}
+.apps li:nth-child(4) img{width:30%;/*width:16%;*/}
+
+/*Research */
+#wrap-comp{background-color:#252525;/*background-image:linear-gradient(#E390F3 -68%, #4acde2 100%)*/;margin-top:15px;margin-bottom:39px;padding: 25px 0 25px 0;}
+.comp-icons{display:table;margin:0 auto;}
+.comp-icons h4{/*color:#FFFFFF;*/font-weight:300;padding-top:20px;}
+.comp-icons ul{padding-top:20px;padding-bottom:20px;}
+.comp-icons ul li{display: inline;}
+.comp-icons li img{width:22%;padding:0 22px 0 30px;}
+.points{margin-top:30px;margin-bottom:25px;}
+.points li{color:#FFFFFF;font-weight:300;}
+.points ul li{list-style-type:circle;font-size:1.25rem;}
+.row.passengers, .row.airline{padding-top:23px;}
+
+.cool-stats{margin:0 auto;}
+.digits{border-radius:50%;width:200px;height:200px;background-color:#6EC6DF;margin:5px 25px 35px 25px;}
+#ia .digits .stats{color:#FFFFFF;font-weight:300;font-size:3.5rem;text-align:center;padding-top:59px;}
+/*Wireframes*/
+
+/*Prototype*/
+
+/*UI Dev*/
+
+/* Results */
+
+#wrap-prod{background-color:#252525;/*background-image:linear-gradient(#E390F3 -68%, #4acde2 100%)*/;margin-top:15px;margin-bottom:45px;padding: 25px 0 25px 0;}
+.our-apps ul{padding-top:20px;/*padding-bottom:20px;*/}
+.our-apps ul li{display: inline;}
+.our-apps li img{width:15%;}
+
+/*********************************************/
+
+
+/* Animations */
+
+/* Media Queries */
+@media screen and (max-width:580px){.apps li img{width:38%;padding:21 18px 0 71px;}}
+@media screen and (max-width:580px){.apps li:nth-child(4) img{width:42%;}}
+@media screen and (max-width:580px){.comp-icons li img{width:38%;padding:26px 22px 0 30px;}}
+
+/*********************************************/
+
+/*********************************************/
+
+/* NIKE */
+
+/* Cover */
+
+/*Research */
+
+/*Wireframes*/
+
+/*********************************************/
+
+/* Animations */
+
+/* Media Queries */
+
+/*********************************************/
+
+/* FOOTER */
+#footer{height:30px;}
+#footer ul{margin:0 auto;}
+#footer li{color:#6EC6DF;display:inline;}
+/*#footer li:first-child, #footer li:nth-child(2){padding-right:182px;}*/
+
+/*.copyright {float:left;}
+.made{margin:0 auto;}
+.motto {float:right;}*/
+
+/* Animations */
+.heart .material-icons{color:#D587F1;/*color:background-image:linear-gradient(#E390F3 -68%, #4acde2 100%);*/position: relative;z-index:2;-webkit-animation:h 1.33s ease-in-out infinite;padding:0 5px 0 5px;animation:h 1.33s ease-in-out infinite;padding:0 5px 0 5px;overflow:hidden;top:5px;}@-webkit-keyframes h{0%{-webkit-transform: scale(1)}50%{-webkit-transform: scale(.8)}100%{-webkit-transform: scale(1)}};@keyframes h{0%{transform: scale(1)}50%{transform: scale(.8)}100%{transform: scale(1)};}
+/* Media Queries */
+@media screen and (max-width:1000px){#footer li:first-child, #footer li:nth-child(2){padding-right:50px;}}
+@media screen and (max-width:480px){#footer li:first-child, #footer li:nth-child(2){padding-right:20px;}}
+@media screen and (max-width:480px){#footer li{font-size:12px;}}
+@media screen and (max-width:480px){.motto{display:block;}}
+@media screen and (max-width:480px){ #footer li:nth-child(3){text-align:center;}}
+
+/*********************************************/

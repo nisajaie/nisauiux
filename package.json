@@ -1,0 +1,37 @@
+
+
+{
+    "name": "uxport",
+    "version": "1.0.0",
+    "description": "Juanisa J. McCoy's UI/UX Portfolio of recent experience designs in e-commerce, workflow (admin), consumer products, enterprise, VR, AR, and AI.",
+    "main": "server.js",
+    "engines": {
+      "node": "19.1.0"
+    },
+    "scripts": {
+      "start": "node server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:nisajaie/nisauiux.git"
+    },
+    "keywords": [
+      "ux",
+      "ui",
+      "vr",
+      "interaction",
+      "design",
+      "design",
+      "front-end",
+      "portfolio",
+      "ai"
+    ],
+    "author": "Juanisa J. McCoy",
+    "license": "ISC",
+    "homepage": "https://github.com/nisajaie/nisauiux#readme",
+    "dependencies": {
+      "animate.css": "^4.1.1",
+      "express": "^4.15.4",
+      "scrollreveal": "^4.0.9"
+    }
+  }
