@@ -46,38 +46,22 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
-        <a class="navbar-brand" href="index.html"><img src="img/mybrand.svg" alt="Nisa Logo" title="Nisa Logo" width="75px" height="75px"></a><span class="subbrand">Experience of Nisa</span>
-        <!-- for mobile -->
-        <button class="navbar-toggler navbar-toggler-right btn" type="button" data-toggle="collapse" data-target="#njm-navbar" aria-controls="njm-navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class"navbar-toggler-icon"><i class="btl bt-bars"></i></span>
-      </button>
-        <!--/for mobile -->
-
-        <!--<div class="collapse navbar-collapse" id="njm-navbar">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Recent Projects</a>
-        </li>-->
-        <!--<li class="nav-item">
-            <a class="nav-link" href="#resume">Work Experience</a>
-          </li>-->
-        <!--<li class="nav-item">
-          <a class="nav-link" href="#contact">Get In Touch</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#extras">About Me</a>
-        </li>
-      </ul>
-    </div>-->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="img/mybrand.svg" alt="Nisa Logo" title="Nisa Logo" width="75px" height="75px"></a><span class="subbrand">Experience of Nisa</span>
+          <!-- for mobile -->
+          <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#njm-navbar" aria-controls="njm-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="btl bt-bars"></i></span>
+          </button>
+          <!--/for mobile -->
     </nav>
     <!--/Navigation -->
 
     <!-- Cover -->
     <section id="cover">
         <div id="cover-caption">
-            <div class="container vsat-goal">
-                <img class="vsat-logo" src="img/logo_viasat.svg" alt="viasat" width="125px" height="125px">
+            <div class="container case-goal">
+                <img class="case-logo" src="img/logo_viasat.svg" alt="viasat" width="125px" height="125px">
                 <h1 class="goal">Experience Goal</h1>
                 <h2 class="statement">Making People Fall In Love With Travel (Again)</h2>
                 <h5 class="disclaimer">Mighty Fine Print</h5>
@@ -101,9 +85,9 @@
             </p>
 
             <div class="container">
-                <div class="quote">
+                <div class="quote row d-flex align-items-center justify-content-center">
                     <hr class="post">
-                    <p class="post-point">70% of passengers say that they would change airlines if they were offered free Wi-Fi.</p>
+                        <p class="post-point">70% of passengers say that they would change airlines if they were offered free Wi-Fi.</p>
                     <hr class="post">
                 </div>
 
@@ -204,9 +188,9 @@
             </div>
             <!-- .row.insights -->
             <div class="container">
-                <div class="quote" style="padding: 20px 0 5px 0;">
+                <div class="quote row d-flex align-items-center justify-content-center" style="padding: 20px 0 5px 0;">
                     <hr class="post">
-                    <p class="post-point">Airlines know that they are losing revenue passengers due to poor Wi-Fi service and customer service interactions.</p>
+                        <p class="post-point">Airlines know that they are losing revenue passengers due to poor Wi-Fi service and customer service interactions.</p>
                     <hr class="post">
                 </div>
             </div>
@@ -299,7 +283,7 @@
                     </div>
 
                     <div class="container">
-                        <div class="quote">
+                        <div class="quote row d-flex align-items-center justify-content-center">
                             <hr class="post">
                             <p class="post-point">We wanted travel translated from frustrating into simple, quick, and comfortable.</p>
                             <hr class="post">
@@ -392,9 +376,9 @@
                 <!--.row-->
             </div>
             <!--/Wireframes -->
-            <div class="quote">
+            <div class="quote row d-flex align-items-center justify-content-center">
                 <hr class="post">
-                <p class="post-point">Our service had to challenge the usual visual, functional, and conversational patterns.</p>
+                    <p class="post-point">Our service had to challenge the usual visual, functional, and conversational patterns.</p>
                 <hr class="post">
             </div>
             <h4 style="padding-bottom:9px;padding-top:20px;">Mockups</h4>
@@ -439,7 +423,7 @@
             <!--.row-->
             <h4 style="padding-bottom:9px;padding-top:20px;">Testing &amp; Experimentation</h4>
             <div class="container">
-                <div class="row">
+                <div class="row intro">
                     <h5>The Investigation Continues</h5>
                     <!-- Process Explaination -->
                     <p>With each sprint, we continued to collect insights and strive for making the solutions easier and comfortable to engage with on a daily basis.</p>
@@ -452,9 +436,9 @@
                         </figure>
                     </div>
 
-                    <div class="quote">
+                    <div class="quote row d-flex align-items-center justify-content-center">
                         <hr class="post">
-                        <p class="post-point">Keeping security in mind became a theme along with comfort and convenience with each iteration.</p>
+                            <p class="post-point">Keeping security in mind became a theme along with comfort and convenience with each iteration.</p>
                         <hr class="post">
                     </div>
                     <p>In the following iterations, internationalization and payment options brought on new questions and challenges that made our team have to re-examine our workflows and layout orientation (LTR and RTL). Meanwhile, I started to explore
@@ -671,8 +655,8 @@
     <!--/Footer -->
 
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <!-- Popper first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
 
