@@ -8,7 +8,7 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="#">
 
-    <title>Juanisa J. McCoy UI/UX Portfolio</title>
+    <title>Juanisa J. McCoy Design Experience Portfolio</title>
     <!-- COMPATIBILITY -->
     <!-- for older browsers -->
 
@@ -33,28 +33,20 @@
     <link rel="stylesheet" href="css/bt/css/black-tie.min.css">
 
     <!-- Scroll Reveal -->
-    <script src="node_modules/scrollreveal/src/scrollreveal.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script>ScrollReveal({ reset: true });</script>
 
     <style>
         /* Ensure elements load hidden before ScrollReveal runs */
-        
-        .sr .fooReveal {
-            visibility: hidden;
+        html.sr .load-hidden {
+        visibility: hidden;
         }
     </style>
 </head>
 
-<body>
+<body class="whole animate__animated animate__fadeIn">
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="img/mybrand.svg" alt="Nisa Logo" title="Nisa Logo" width="75px" height="75px"></a><span class="subbrand">Experience of Nisa</span>
-          <!-- for mobile -->
-          <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#njm-navbar" aria-controls="njm-navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="btl bt-bars"></i></span>
-          </button>
-          <!--/for mobile -->
-    </nav>
+    <div id="navbarComponent"></div>
     <!--/Navigation -->
 
     <!-- Cover -->
@@ -68,6 +60,7 @@
                 <p>And now for the disclaimer. All confidential information has been removed in cooperation with the non-disclosure agreement (NDA). Any stats may have been altered to not disclose any data. This case study is a reflection of my own views
                     and not necessarily the views of ViaSat and its airline partners.</p>
             </div>
+        </div>
     </section>
     <!--/Cover -->
 
@@ -654,6 +647,14 @@
     </section>
     <!--/Footer -->
 
+    <!-- NavBar component script -->
+    <script>
+        fetch("navbar.html")
+            .then((response) => response.text())
+            .then((content) => {
+            document.getElementById("navbarComponent").innerHTML = content;
+            });
+    </script>
 
     <!-- Popper first, then Tether, then Bootstrap JS. -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -665,14 +666,19 @@
 
     <!-- Scroll Reveal -->
     <!-- For on scroll animations. Note: duration are in ms -->
+    <script>
+        window.sr = ScrollReveal();
+    </script>
+
+    <!-- Scroll Reveal -->
+    <!-- For on scroll animations. Note: duration are in ms -->
     <!--<script>
     window.sr = ScrollReveal();
     sr.reveal('#role', {
       duration: 3000,
       delay: 3000,
 
-  </script>-->
-
+    </script>-->
 
 </body>
 

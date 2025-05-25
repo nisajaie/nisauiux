@@ -8,7 +8,7 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="#">
 
-  <title>Juanisa J. McCoy UI/UX Portfolio</title>
+  <title>Juanisa J. McCoy Design Experience Portfolio</title>
   <!-- COMPATIBILITY -->
   <!-- for older browsers -->
 
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Animate CSS -->
-  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,900" rel="stylesheet">
@@ -33,21 +33,21 @@
   <link rel="stylesheet" href="css/bt/css/black-tie.min.css">
 
   <!-- Scroll Reveal -->
-  <script src="node_modules/scrollreveal/src/scrollreveal.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+  <script>ScrollReveal({ reset: true });</script>
 
   <style>
     /* Ensure elements load hidden before ScrollReveal runs */
-
-    .sr .fooReveal {
+    html.sr .load-hidden {
       visibility: hidden;
     }
   </style>
 </head>
 
-<body class="whole animated fadeIn">
+<body class="whole animate__animated animate__fadeIn">
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-    <div class="container">
+    <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="img/mybrand.svg" alt="Nisa Logo" title="Nisa Logo" width="75px" height="75px"></a><span class="subbrand">Experience of Nisa</span>
       <!-- for mobile -->
       <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#njm-navbar" aria-controls="njm-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,9 +56,6 @@
       <!--/for mobile -->
       <div class="collapse navbar-collapse" id="njm-navbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Case Studies
@@ -68,30 +65,9 @@
               <li><a class="dropdown-item" href="nike.html">Nike</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="page.html">NASA</a></li>
-              <li><a class="dropdown-item" href="#">IVOW</a></li>
-              <li><a class="dropdown-item" href="#">Huntington Bank</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Experiments</a></li>
-            </ul>
-          </li>
-          <!--<li class="nav-item">
-            <a class="nav-link" href="mailto:nisajaie@gmail.com" aria-label="#contact"><span><i class="btl bt-envelope"></i></span>Email</a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/nisajaie/" aria-label="resume"><span><i class="fab fab-linkedin"></i></span>LinkedIn</a>
+            <a class="nav-link" href="resume.html" aria-label="resume">Resume</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://medium.com/@nisajaie" aria-label="blog"><span><i class="fab fab-medium"></i></span>Medium</a>
-          </li>-->
-          <!--<li class="nav-item">
-            <a class="nav-link" href="#extras">About Me</a>
-          </li>-->
         </ul>
       </div>
     </div>
@@ -103,15 +79,15 @@
     <div id="cover-caption">
       <div class="container">
         <div class="float-top">
-          <h1 class="amt animated fadeIn">10 Years</h1>
-          <h2 class="exp animated fadeIn">UI/UX Experience</h2>
+          <h1 class="amt animate__animated animate__fadeIn">10 Years</h1>
+          <h2 class="exp animate__animated animate__fadeIn">Experience Design</h2>
         </div>
-        <div class="float-show animated fadeIn">
+        <div class="float-show animate__animated animate__fadeIn">
           <img src="img/eye_candy.png" alt="">
           <!--<span class="show1"></span>
           <span class="show2"></span>-->
         </div>
-        <div class="float-bottom animated fadeIn">
+        <div class="float-bottom animate__animated animate__fadeIn">
           <h2 class="cat">Digital | Mobile | VR/AR | AI</h2>
         </div>
       </div>
@@ -119,23 +95,33 @@
   </section>
   <!--/Cover -->
 
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="row skill">
+
+      </div>
+    </div>
+  </section>
+  <!--/Skills -->
+
   <!-- Portfolio with description and example float in and button for to see more in depth-->
   <section id="projects">
     <div class="container">
-      <!-- ViaSat -->
       <div class="row work">
+        <!-- ViaSat -->
         <div class="col-md-6 col-sm-6 text-center">
-          <div class="vsat-left">
-            <img class="bottom" src="img/block_viasat.png" alt="viasat">
+          <div class="vsat-left load-hidden">
+            <img class="bottom" src="img/block_viasat.png" alt="viasat case study">
             <!--<img class="top" src="img/block_viasat_alt.png">-->
           </div>
 
-          <div class="vsat-right">
+          <div class="vsat-right load-hidden">
             <!--<h1>ViaSat</h1>-->
             <h2>Fully Connected Travel</h2>
             <p>Expanding ViaSat's mobility platform.</p>
             <div class="text-center">
-              <a class="btn btn-default btn-lg projects-btn" href="vsat.html">Explore</a>
+              <a class="btn btn-default btn-lg projects-btn load-hidden" href="vsat.html">Explore</a>
             </div>
           </div>
 
@@ -143,18 +129,17 @@
         <!--/ViaSat -->
 
         <!-- Nike -->
-
         <div class="col-md-6 col-sm-6 text-center">
-          <div class="nike-left">
-            <img class="bottom" src="img/block_nike.png" alt="nike">
+          <div class="nike-left load-hidden">
+            <img class="bottom" src="img/block_nike.png" alt="nike case study">
             <!--<img class="top" src="img/block_nike_alt.png">-->
           </div>
-          <div class="nike-right">
+          <div class="nike-right load-hidden">
             <!--<h1>Nike</h1>-->
             <h2>Insighful Smart Apparel</h2>
             <p>Redesigning wearable technology with lifestyle.</p>
             <div class="text-center">
-              <a class="btn btn-default btn-lg projects-btn" href="nike.html">Explore</a>
+              <a class="btn btn-default btn-lg projects-btn load-hidden" href="nike.html">Explore</a>
             </div>
           </div>
         </div>
@@ -167,7 +152,7 @@
       <!--/Experiments -->
     </div>
   </section>
-  <!--/Portolio -->
+  <!--/Portfolio -->
 
   <!-- About Me With Contact -->
 
@@ -201,7 +186,6 @@
     sr.reveal('.vsat-left', {
       duration: 3000,
       delay: 3000,
-
     });
     sr.reveal('.vsat-right', {
       duration: 3000,
@@ -212,7 +196,6 @@
     sr.reveal('.nike-left', {
       duration: 3000,
       delay: 3000,
-
     });
     sr.reveal('.nike-right', {
       duration: 3000,
@@ -221,13 +204,12 @@
       distance: '25px',
     });
     sr.reveal('#projects .projects-btn', {
-      duration: 2000,
-      delay: 2000,
-      origin: 'bottom',
-      distance: '50px',
+      duration: 500,
+      delay: 0,
+      origin: 'top',
+      distance: '10px',
     });
   </script>
-
 
 </body>
 
