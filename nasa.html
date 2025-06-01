@@ -33,61 +33,21 @@
     <link rel="stylesheet" href="css/bt/css/black-tie.min.css">
 
     <!-- Scroll Reveal -->
-    <script src="node_modules/scrollreveal/src/scrollreveal.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script>ScrollReveal({ reset: true });</script>
 
     <style>
         /* Ensure elements load hidden before ScrollReveal runs */
-        
-        .sr .fooReveal {
-            visibility: hidden;
+        html.sr .load-hidden {
+        visibility: hidden;
         }
     </style>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="img/mybrand.svg" alt="Nisa Logo" title="Nisa Logo" width="75px" height="75px"></a><span class="subbrand">Experience of Nisa</span>
-        <!-- for mobile -->
-        <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#njm-navbar" aria-controls="njm-navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="btl bt-bars"></i></span>
-        </button>
-        <!--/for mobile -->
-        <div class="collapse navbar-collapse" id="njm-navbar">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Case Studies
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="vsat.html">ViaSat</a></li>
-                <li><a class="dropdown-item" href="nike.html">Nike</a></li>
-                <li><a class="dropdown-item" href="page.html">NASA</a></li>
-                <li><a class="dropdown-item" href="#">IVOW</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Experiments</a></li>
-                </ul>
-            </li>
-            <!--<li class="nav-item">
-                <a class="nav-link" href="mailto:nisajaie@gmail.com" aria-label="#contact"><span><i class="btl bt-envelope"></i></span>Email</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/nisajaie/" aria-label="resume"><span><i class="fab fab-linkedin"></i></span>LinkedIn</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://medium.com/@nisajaie" aria-label="blog"><span><i class="fab fab-medium"></i></span>Medium</a>
-            </li>-->
-            <!--<li class="nav-item">
-                <a class="nav-link" href="#extras">About Me</a>
-            </li>-->
-            </ul>
-        </div>
-        </div>
-    </nav>
-    <!--/Navigation -->
+
+<body class="whole animate__animated animate__fadeIn">
+  <!-- Navigation -->
+  <div id="navbarComponent"></div>
+  <!--/Navigation -->
 
     <!-- Cover -->
     <section id="cover">
@@ -95,7 +55,7 @@
         <div class="container case-goal">
             <img class="case-logo" src="img" alt="" width="125px" height="125px">
             <h1 class="goal">Experience Goal</h1>
-            <h2 class="statement">Catchy Phrase</h2>
+            <h2 class="statement">It's Not Rocket Science</h2>
             <h5 class="disclaimer">Mighty Fine Print</h5>
             <p>And now for the disclaimer. All confidential information has been removed in cooperation with the non-disclosure agreement (NDA). Any stats may have been altered to not disclose any data. This case study is a reflection of my own views
                 and not necessarily the views of [ ].</p>
@@ -107,7 +67,7 @@
     <section id="probs">
         <div class="container">
             <h2 class="case-title">Title</h2>
-            <h4>Subtitle</h4>
+            <h4>How to Make Science Easy</h4>
             <p>Brief description of problem or need.</p>
 
             <h4>Hypothesis</h4>
@@ -358,10 +318,28 @@
     </section>
     <!--/Footer -->
 
+    <!-- NavBar component script -->
+    <script>
+        fetch("navbar.html")
+            .then((response) => response.text())
+            .then((content) => {
+            document.getElementById("navbarComponent").innerHTML = content;
+            });
+    </script>
+
     <!-- Popper first, then Tether, then Bootstrap JS. -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Animate CSS -->
+    <!-- Need for simple animations. Note: duration are in sec -->
+
+    <!-- Scroll Reveal -->
+    <!-- For on scroll animations. Note: duration are in ms -->
+    <script>
+        window.sr = ScrollReveal();
+    </script>
 
 </body>
 

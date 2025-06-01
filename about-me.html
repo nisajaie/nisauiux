@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="shortcut icon" type="image/x-icon" href="#">
+
+  <title>Juanisa J. McCoy Design Experience Portfolio</title>
+  <!-- COMPATIBILITY -->
+  <!-- for older browsers -->
+
+  <!-- STYLES -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <!-- ICONS -->
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Black Tie Light Icons -->
+  <link rel="stylesheet" href="css/bt/css/black-tie.min.css">
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+  <script>ScrollReveal({ reset: true });</script>
+
+  <style>
+    /* Ensure elements load hidden before ScrollReveal runs */
+    html.sr .load-hidden {
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body class="whole animate__animated animate__fadeIn">
+  <!-- Navigation -->
+  <div id="navbarComponent"></div>
+  <!--/Navigation -->
+
+  <!-- Cover -->
+  <section id="cover">
+    <div id="cover-caption">
+        <div class="container about-header">
+          <div class="wrapper">
+             <div class="profile-intro">
+            <div class="polaroid">
+              <img src="img/profile_400x400_img.png" alt="my profile photo">
+               <div class="greeting">About Me</div>
+            </div>
+          </div>
+          </div>
+            <h2>I'm a Designer who loves to experiment, build, test, and learn. I seek opportunities where I can create and contribute to innovative solutions with purpose.</h2>
+        </div>
+    </div>
+  </section>
+  <!--/Cover -->
+
+  <!-- Introduction -->
+  <section id="introduction">
+    <div class="container">
+     <h2 class="about-title">Introduction</h2>
+        <div class="col-md-12 col-sm-12"></div>
+            <div class="row hello">
+                <h4>Hello There</h4>
+                <p>Allow me to introduce myself. McCoy. Juanisa J. McCoy. Better known as Nisa. (handshake)
+                </p>
+                <p>
+                  I am a designer by nature. I started drawing before I knew how to write. I have had the privilege to work globally with various individual clients and companies. My palette consists of product and service design, user research and testing, branding strategy, illustration and animation, and system and CI/CD architecture.
+                </p>
+                <p>
+                  Currently, I have been exploring design concepts in AI, Blockchain/Web 3, Raspberry Pi, industrial design, big data, and immersive experiences. In the future, I aim to continue creating innovative projects in design and tech.
+                </p>
+                <p>
+                  Allow me to bring you into my world, and I will be more than grateful to color yours.
+                </p>
+                <p>To learn more about my experience and skills, visit here: <span><a href="resume.html" aria-label="resume">Resume</a></span></p>
+                <h4>Fun Facts</h4>
+                <ul>
+                  <li>My favorite word is ‘experimentation’. I believe that experimentation leads to user and product success through empathy, ideation, collaboration, testing, research, and iteration.</li>
+                  <li>My favorite go-to is hot chocolate over coffee any day.</li>
+                  <li>As an EV vehicle owner (for 10 years), I have been passionate about clean energy and sustainability, and I have participated in various eco-tech initiatives.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--/Introduction -->
+
+  <!-- Methods -->
+  <!--<section id="core">
+    <div class="container">
+     <h2 class="about-title">Methods</h2>
+        <div class="col-md-12 col-sm-12"></div>
+            <div class="row comp">
+                <h4>How I Design &amp; Lead</h4>
+                <p>Product Strategy &amp; Roadmapping, UX Research &amp; Human-Centered Design, Design System Management, Accessibility (WCAG, 508), Agile Scrum Methodologies, AI/ML Product Innovation, Front-End Development, Rapid Prototyping &amp; Usability Testing, Brand Identity &amp; Storytelling
+                </p>
+            </div>
+        </div>
+    </div>
+  </section>-->
+  <!--/Methods -->
+
+  <!-- Lessons Learned -->
+  <!--<section id="core">
+    <div class="container">
+     <h2 class="about-title">Lessons Learned</h2>
+        <div class="col-md-12 col-sm-12"></div>
+            <div class="row comp">
+                <h4>Food for Thought</h4>
+                <p>Product Strategy &amp; Roadmapping, UX Research &amp; Human-Centered Design, Design System Management, Accessibility (WCAG, 508), Agile Scrum Methodologies, AI/ML Product Innovation, Front-End Development, Rapid Prototyping &amp; Usability Testing, Brand Identity &amp; Storytelling
+                Starting a blog -- it's cheeky.
+                </p>
+                <p>Starting a blog -- it's cheeky.</p>
+            </div>
+        </div>
+    </div>
+  </section>-->
+  <!--/Lessons Learned -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="nav navbar-nav navbar">
+        <ul>
+          <li><span class="copyright">&copy;<script type="text/javascript">document.write(new Date().getFullYear());</script></span><span>  Juanisa J. McCoy | UI/UX Designer</span><span class="made"><span class="heart"><i class="material-icons" color="#FFF";>favorite</i></span><span>Web, Mobile, VR/AR, Conversational AI</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  <!--/Footer -->
+
+  <!-- NavBar component script -->
+  <script>
+    fetch("navbar.html")
+        .then((response) => response.text())
+        .then((content) => {
+          document.getElementById("navbarComponent").innerHTML = content;
+        });
+  </script>
+
+  <!-- Popper first, then Tether, then Bootstrap JS. -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Animate CSS -->
+  <!-- Need for simple animations. Note: duration are in sec -->
+
+  <!-- Scroll Reveal -->
+  <!-- For on scroll animations. Note: duration are in ms -->
+  <script>
+    window.sr = ScrollReveal();
+  </script>
+
+</body>
+
+</html>
