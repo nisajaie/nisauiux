@@ -5,7 +5,7 @@ File Name: styles.css
 
 Created: 8/31/17
 
-Updated: 5/20/2025
+Updated: 6/7/2025
 
 Version 4.0
 *********************************************/
@@ -42,7 +42,7 @@ h5,
 h6,
 li,
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1,
@@ -89,14 +89,19 @@ li {
  * [2] IE10+
  */
 /* 1 */
-.ie9 img[src*=".svg"] {
+.ie9 img[src*='.svg'] {
 	width: 100%;
 }
 /* 2 */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	img[src*=".svg"] {
+	img[src*='.svg'] {
 		width: 100%;
 	}
+}
+
+svg {
+	max-height: 100%;
+	max-width: 100%;
 }
 
 /*********************************************/
@@ -323,8 +328,7 @@ li {
 }
 /*#projects .vsat-right, #projects .nike-right{margin-top:90px;}*/
 /*.row.vsat, .row.nike{margin:30px 0 30px 0;padding:30px 0 30px 0;/*box-shadow: 0px 2px 9px rgba(75,205,226,.55);border-radius:7px;}*/
-.btn {
-	/*background-color:#6EC6DF;*/ /*background-image:linear-gradient(#80E6F3 20%, #4AC8E2 100%);*/
+/* .btn {
 	background-image: linear-gradient(#80e6f5 9%, #80c3f4 85%, #4ac8e2 100%);
 	color: #ffffff;
 	border: 2px solid rgba(255, 255, 255, 0.35);
@@ -338,13 +342,101 @@ li {
 		#4ac8e2 100%
 	);
 	border: 2px solid rgba(255, 255, 255, 0.35);
+} */
+
+.navbar-toggler {
+	background-image: linear-gradient(#80e6f5 9%, #80c3f4 85%, #4ac8e2 100%);
+	color: #ffffff;
+	border: 2px solid rgba(255, 255, 255, 0.35);
+	box-shadow: 0px 2px 9px rgba(75, 205, 226, 0.55);
+
+	&:hover {
+		background-image: linear-gradient(
+			to left,
+			#80e6f5 9%,
+			#80c3f4 85%,
+			#4ac8e2 100%
+		);
+		border: 2px solid rgba(255, 255, 255, 0.35);
+	}
 }
+
+.card {
+	max-width: 20rem;
+	height: 21.875rem;
+	border: 2px solid rgba(75, 205, 226, 0.25);
+	box-shadow: 0px 2px 9px rgba(75, 205, 226, 0.25);
+	align-items: center;
+	transition: all 0.5s;
+
+	&:hover {
+		border: 2px solid rgba(255, 255, 255, 0.765);
+		box-shadow: 0px 2px 9px rgba(213, 135, 241, 0.55);
+		cursor: pointer;
+	}
+}
+
+.card-img-top {
+	padding-top: 1rem;
+}
+
+#projects .btn {
+	opacity: 0;
+}
+
+/* .card.vsat:hover {
+	background: url("/img/block_viasat2.png") no-repeat;
+}
+
+.card.nike:hover {
+	background: url("/img/block_nike2.png") no-repeat;
+}
+
+.card.nasa:hover {
+	background: url("/img/nasa/img_NASA_PACE_plankton.png") no-repeat;
+} */
+
+/* .card.nike:hover .card-body h2,
+.card.nike:hover .card-body p {
+	color: white !important;
+}
+
+.card.vsat:hover .card-body h2,
+.card.vsat:hover .card-body p {
+	color: white !important;
+}
+
+.card.nike:hover .card-body .badge {
+	background-color: rgba(255, 255, 255, 0.51);
+	border: 1px solid white;
+}
+
+.card.nike .card-img-top::before {
+	content: url(img/nike/logo/logo_nike_black.svg);
+}
+
+.card.nike:hover .card-img-top::before {
+	content: url(img/nike/logo/logo_nike.svg);
+}
+
+.card-body {
+	padding: 1rem;
+	border-radius: 20px 20px 0 0;
+	margin: 10px 10px 0 10px;
+}
+
+.card:hover .card-body {
+	-webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);
+	background-color: rgba(255, 255, 255, 0.25);
+} */
 
 /* ALL CASES */
 #role,
 #ia,
 #dev,
-#design {
+#design,
+#bento-box {
 	background-color: #f2fbff;
 	/* background-color: #fbfbfb; */
 }
@@ -379,7 +471,8 @@ li {
 #proto,
 #dev,
 #design,
-#summary {
+#summary,
+#bento-box {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
@@ -398,6 +491,14 @@ li {
 	font-size: 1.25rem;
 }
 /*#probs p span, #role p span, #rd p span, #ia p span, #wires p span, #proto p span, #dev p span{font-weight:400;}*/
+
+.questions li {
+	list-style-type: circle;
+	color: #929191;
+	font-weight: 300;
+	font-size: 1.25rem;
+}
+
 figcaption {
 	color: #929191;
 	font-weight: 300;
@@ -454,6 +555,13 @@ figcaption {
 .case-logo {
 	width: 24%;
 }
+
+.case-logo.nasa {
+	width: 20%;
+	height: 20%;
+	padding: 1rem 0;
+}
+
 figure img {
 	width: 100%;
 }
@@ -491,6 +599,10 @@ figcaption {
 }
 .apps li:nth-child(4) img {
 	width: 30%; /*width:16%;*/
+}
+
+.apps.nasa li:nth-child(4) img {
+	width: 22%;
 }
 
 /*Research */
@@ -643,7 +755,7 @@ figcaption {
 }
 
 .profile-intro .polaroid:before {
-	content: "";
+	content: '';
 	position: absolute;
 	z-index: -1;
 	transition: all 0.35s;
@@ -791,6 +903,41 @@ figcaption {
 	font-weight: 300;
 }
 
+.bento-inner {
+	padding-top: 3rem;
+}
+
+.bento-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	color: black;
+	height: 350px;
+	border-radius: 1rem;
+	transition: transform 0.3s ease;
+
+	&:hover {
+		transform: scale(1.05);
+		filter: drop-shadow(0 0.5rem 0.1rem rgba(75, 205, 226, 0.55));
+	}
+
+	img {
+		max-width: 75%;
+		border-radius: 1rem;
+		padding: 0.5 rem;
+	}
+}
+
+.bento-link {
+	text-decoration: none;
+}
+
+.bento-large {
+	height: 500px;
+}
+
 article {
 	background-color: white;
 	color: black;
@@ -830,7 +977,11 @@ main {
 	aspect-ratio: var(--bento-cols) / var(--bento-rows);
 }
 
-#bento > * {
+#bento a {
+	text-decoration: none;
+}
+
+/* #bento > * {
 	overflow: hidden;
 	position: relative;
 	margin: calc(var(--bento-gap) / 2);
@@ -841,18 +992,19 @@ main {
 	grid-column: span 2;
 	grid-row: span 2;
 	/*background-color: var(--important-color);
-	color: var(--light-color);*/
+	color: var(--light-color);
 }
 
 #bento > :nth-child(2) {
 	grid-row: span 2;
 	/*background-color: var(--secondary-color);
-	color: var(--light-color);*/
+	color: var(--light-color);
 }
 
 #bento > :nth-child(n + 9) {
 	display: none;
 }
+*/
 
 /*********************************************/
 
