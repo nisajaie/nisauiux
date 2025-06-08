@@ -236,6 +236,17 @@ svg {
 	-webkit-animation-delay: 3s;
 }
 
+.row.welcome-message,
+.row.skill-set,
+.row.work {
+	animation-duration: 4s;
+	animation-delay: 3s;
+	-vendor-animation-duration: 4s;
+	-vendor-animation-delay: 3s;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-delay: 3s;
+}
+
 /* Media Queries */
 @media screen and (max-width: 580px) {
 	.exp,
@@ -308,8 +319,48 @@ svg {
 }
 
 /* Body Content */
-/*#projects{margin-top:135px;}*/
-#projects h1 {
+#welcome {
+	margin: 55px 0 10px 0;
+}
+
+.welcome-message p {
+	font-size: 1.25rem;
+}
+
+#skills .items .terms {
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 1.15rem;
+	text-align: center;
+}
+
+.skill-set .items {
+	border-radius: 50%;
+	width: 245px;
+	height: 245px;
+	background-color: #6ec6df;
+	margin: 5px 0px 35px 50px;
+}
+
+.skill-set {
+	margin: 0 auto;
+}
+
+#skills h2 {
+	font-weight: 400;
+}
+
+#skills h5 {
+	margin-top: 20px;
+	font-size: 1.5rem;
+	/*font-size: 4.25rem;*/
+}
+
+#projects {
+	margin: 40px 0 51px 0;
+}
+
+#projects .card-body h1 {
 	font-size: 38px;
 	font-weight: 300;
 	margin-top: 20px;
@@ -323,9 +374,13 @@ svg {
 #projects img {
 	margin-bottom: 25px; /*width:90%;margin-left:60px;*/
 }
-.row.work {
-	margin: 61px 0 30px 0; /*padding:30px 0 30px 0;/*box-shadow: 0px 2px 9px rgba(75,205,226,.55);border-radius:7px;*/
+
+.case-studies {
+	font-weight: 300;
+	color: #d587f1;
+	margin-bottom: 30px;
 }
+
 /*#projects .vsat-right, #projects .nike-right{margin-top:90px;}*/
 /*.row.vsat, .row.nike{margin:30px 0 30px 0;padding:30px 0 30px 0;/*box-shadow: 0px 2px 9px rgba(75,205,226,.55);border-radius:7px;}*/
 /* .btn {
@@ -788,19 +843,13 @@ figcaption {
 
 .resume-header .about {
 	padding: 25px 0 17px 0;
-	font-size: 1.125rem;
+	font-size: 1.25rem;
 	font-weight: 400;
 }
 
 .resume-header .overview {
 	padding-top: 25px;
 	font-size: 1.44rem;
-	font-weight: 400;
-}
-
-.resume-header .about {
-	padding-top: 25px;
-	font-size: 1.25rem;
 	font-weight: 400;
 }
 

@@ -14,7 +14,8 @@
 
   <!-- STYLES -->
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/styles.css">
@@ -52,17 +53,18 @@
   <!-- Cover -->
   <section id="cover">
     <div id="cover-caption">
-        <div class="container about-header">
-          <div class="wrapper">
-             <div class="profile-intro">
+      <div class="container about-header">
+        <div class="wrapper">
+          <div class="profile-intro">
             <div class="polaroid">
               <img src="img/profile_400x400_img.png" alt="my profile photo">
-               <div class="greeting">About Me</div>
+              <div class="greeting">About Me</div>
             </div>
           </div>
-          </div>
-            <h2>I'm a Designer who loves to experiment, build, test, and learn. I seek opportunities where I can create and contribute to innovative solutions with purpose.</h2>
         </div>
+        <h2>I'm a Designer who loves to experiment, build, test, and learn. I seek opportunities where I can create and
+          contribute to innovative solutions.</h2>
+      </div>
     </div>
   </section>
   <!--/Cover -->
@@ -70,30 +72,39 @@
   <!-- Introduction -->
   <section id="introduction">
     <div class="container">
-     <h2 class="about-title">Introduction</h2>
-        <div class="col-md-12 col-sm-12"></div>
-            <div class="row hello">
-                <h4>Hello There</h4>
-                <p>Allow me to introduce myself. McCoy. Juanisa J. McCoy. Better known as Nisa. (handshake)
-                </p>
-                <p>
-                  I am a designer by nature. I started drawing before I knew how to write. I have had the privilege to work globally with various individual clients and companies. My palette consists of product and service design, user research and testing, branding strategy, illustration and animation, and system and CI/CD architecture.
-                </p>
-                <p>
-                  Currently, I have been exploring design concepts in AI, Blockchain/Web 3, Raspberry Pi, industrial design, big data, and immersive experiences. In the future, I aim to continue creating innovative projects in design and tech.
-                </p>
-                <p>
-                  Allow me to bring you into my world, and I will be more than grateful to color yours.
-                </p>
-                <p>To learn more about my experience and skills, visit here: <span><a href="resume.html" aria-label="resume">Resume</a></span></p>
-                <h4>Fun Facts</h4>
-                <ul>
-                  <li>My favorite word is ‘experimentation’. I believe that experimentation leads to user and product success through empathy, ideation, collaboration, testing, research, and iteration.</li>
-                  <li>My favorite go-to is hot chocolate over coffee any day.</li>
-                  <li>As an EV vehicle owner (for 10 years), I have been passionate about clean energy and sustainability, and I have participated in various eco-tech initiatives.</li>
-                </ul>
-            </div>
-        </div>
+      <h2 class="about-title">Introduction</h2>
+      <div class="col-md-12 col-sm-12"></div>
+      <div class="row hello">
+        <h4>Hello There</h4>
+        <p>Allow me to introduce myself. McCoy. Juanisa J. McCoy. Better known as Nisa. (handshake)
+        </p>
+        <p>
+          I am a designer by nature. I started drawing before I knew how to write. I have had the privilege to work
+          globally with various individual clients and companies. My palette consists of product and service design,
+          user research and testing, branding strategy, illustration and animation, and system and CI/CD architecture.
+        </p>
+        <p>
+          Currently, I have been exploring design concepts in AI, Blockchain/Web 3, Raspberry Pi, industrial design, big
+          data, and immersive experiences. In the future, I aim to continue creating innovative projects in design and
+          tech.
+        </p>
+        <p>
+          Allow me to bring you into my world, and I will be more than grateful to color yours.
+        </p>
+        <p>To learn more about my experience and skills, check out my <a href="resume.html"
+            aria-label="resume">Resume</a>.</p>
+        <h4>Fun Facts</h4>
+        <ul>
+          <li>My favorite word is "experimentation". I believe that experimentation leads to user and product success
+            through empathy, ideation, collaboration, testing, research, and iteration.</li>
+          <li>My favorite go-to beverage is hot chocolate over coffee any day.</li>
+          <li>As an EV vehicle owner (for 10 years), I have been passionate about clean energy and sustainability, and I
+            have participated in various eco-tech initiatives such as Overview Collective and the UN ITU's United for
+            Smart
+            Sustainable Cities (U4SSC)</li>
+        </ul>
+      </div>
+    </div>
     </div>
   </section>
   <!--/Introduction -->
@@ -135,25 +146,33 @@
     <div class="container">
       <div class="nav navbar-nav navbar">
         <ul>
-          <li><span class="copyright">&copy;<script type="text/javascript">document.write(new Date().getFullYear());</script></span><span>  Juanisa J. McCoy | UI/UX Designer</span><span class="made"><span class="heart"><i class="material-icons" color="#FFF";>favorite</i></span><span>Web, Mobile, VR/AR, Conversational AI</span></li>
-          </ul>
-        </div>
+          <li><span class="copyright">&copy;
+              <script type="text/javascript">document.write(new Date().getFullYear());</script>
+            </span><span> Juanisa J. McCoy | UI/UX Designer</span><span class="made"><span class="heart"><i
+                  class="material-icons" color="#FFF" ;>favorite</i></span><span>Web, Mobile, VR/AR, Conversational
+                AI</span></li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </section>
   <!--/Footer -->
 
   <!-- NavBar component script -->
   <script>
     fetch("navbar.html")
-        .then((response) => response.text())
-        .then((content) => {
-          document.getElementById("navbarComponent").innerHTML = content;
-        });
+      .then((response) => response.text())
+      .then((content) => {
+        document.getElementById("navbarComponent").innerHTML = content;
+      });
   </script>
 
   <!-- Popper first then Bootstrap JS. -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+    integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+    crossorigin="anonymous"></script>
 
   <!-- Animate CSS -->
   <!-- Need for simple animations. Note: duration are in sec -->
