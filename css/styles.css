@@ -656,10 +656,6 @@ figcaption {
 	width: 30%; /*width:16%;*/
 }
 
-.apps.nasa li:nth-child(4) img {
-	width: 22%;
-}
-
 /*Research */
 #wrap-comp {
 	background-color: #252525; /*background-image:linear-gradient(#E390F3 -68%, #4acde2 100%)*/
@@ -1071,7 +1067,7 @@ main {
 @media screen and (max-width: 580px) {
 	.apps li img {
 		width: 38%;
-		padding: 21 18px 0 71px;
+		padding: 21px 18px 0 71px;
 	}
 }
 @media screen and (max-width: 580px) {
