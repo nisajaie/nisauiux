@@ -43,6 +43,10 @@
       visibility: hidden;
     }
   </style>
+  <!-- Calendly -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 
 <body class="whole animate__animated animate__fadeIn">
@@ -108,6 +112,19 @@
   </section>
   <!--/Introduction -->
 
+  <section id="contact">
+    <div class="container">
+      <div class="row call-me">
+        <h4>Contact Me</h4>
+        <p>To reach me about opportunities, email me at <a href="mailto:nisajaie@gmail.com"
+            aria-label="email contact">nisajaie@gmail.com</a> or schedule for a chat at my
+          <a href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/juanisamccoy/30min'});return false;">Calendly</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- Methods -->
   <!--<section id="core">
     <div class="container">
@@ -141,19 +158,7 @@
   <!--/Lessons Learned -->
 
   <!-- Footer -->
-  <section id="footer">
-    <div class="container">
-      <div class="nav navbar-nav navbar">
-        <ul>
-          <li><span class="copyright">&copy;
-              <script type="text/javascript">document.write(new Date().getFullYear());</script>
-            </span><span> Juanisa J. McCoy | UI/UX Designer</span><span class="made"><span class="heart"><i
-                  class="material-icons" color="#FFF" ;>favorite</i></span><span>Web, Mobile, VR/AR, Conversational
-                AI</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <div id="footerComponent"></div>
   <!--/Footer -->
 
   <!-- NavBar component script -->
@@ -162,6 +167,15 @@
       .then((response) => response.text())
       .then((content) => {
         document.getElementById("navbarComponent").innerHTML = content;
+      });
+  </script>
+
+  <!-- Footer component script -->
+  <script>
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((content) => {
+        document.getElementById("footerComponent").innerHTML = content;
       });
   </script>
 

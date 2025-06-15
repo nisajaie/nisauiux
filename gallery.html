@@ -63,8 +63,10 @@
     <!-- Gallery -->
     <section id="bento-box">
         <div class="container my-5">
-            <h1 class="text-center mb-4">Projects</h1>
-            <p class="text-center">This showcase highlights the various projects I have worked on. </p>
+            <h1 class="text-center mb-4">Gallery</h1>
+            <p class="text-center" style="font-size: 1.25rem;">This showcase highlights the various projects I have
+                worked on. Click on the samples
+                below to discover more.</p>
             <div class="row g-4 bento-inner">
                 <!-- Large item -->
                 <div class="col-md-8">
@@ -74,7 +76,9 @@
                     </div>
                     <a class="bento-link" href="#" data-bs-toggle="modal" data-bs-target="#box1Modal">
                         <div class="bento-item bento-large bg-light">
-                            Large Box
+                            <img class="logo-nasa-port" src="img/nasa/logo/logo_NASA_color.svg" alt="">
+                            <span class="halo nasa"></span>
+                            <img class="halo-blur nasa" src="img/gallery/nasa/rover_pers_pic.jpg" alt="">
                         </div>
                     </a>
                 </div>
@@ -99,7 +103,7 @@
                             </div>
                             <a class="bento-link" href="#" data-bs-toggle="modal" data-bs-target="#box3Modal">
                                 <div class="bento-item bg-light">
-                                    <img src="img/gallery/other/journey_app_still.png" alt="journey app bento">
+                                    <img src="img/gallery/other/AR/journey_app_still.png" alt="journey app bento">
                                 </div>
                             </a>
                         </div>
@@ -107,25 +111,41 @@
                 </div>
                 <!-- Medium item -->
                 <div class="col-md-4">
+                    <div>
+                        <h4>BlockShare</h4>
+                        <p>Blockchain</p>
+                    </div>
                     <a class="bento-link" href="#" data-bs-toggle="modal" data-bs-target="#box4Modal">
-                        <div class="bento-item bg-warning bg-light">
-                            Blockshare
+                        <div class="bento-item bg-light">
+                            <img src="img/gallery/other/web3/blockshare_logo_full.png" alt="">
                         </div>
                     </a>
                 </div>
                 <!-- Medium item -->
                 <div class="col-md-4">
+                    <div>
+                        <h4>OctopAI App</h4>
+                        <p>GenAI/LLM</p>
+                    </div>
                     <a class="bento-link" href="#" data-bs-toggle="modal" data-bs-target="#box5Modal">
                         <div class="bento-item bg-info bg-light">
-                            Dreambird
+                            <img src="img/gallery/other/AI/octopAI_full.png" alt="">
                         </div>
                     </a>
                 </div>
                 <!-- Medium item -->
                 <div class="col-md-4">
+                    <div>
+                        <h4>realworldone</h4>
+                        <p>VR/AR</p>
+                    </div>
                     <a class="bento-link" href="#" data-bs-toggle="modal" data-bs-target="#box6Modal">
                         <div class="bento-item bg-light">
-                            realworldone
+                            <img class="logo-rwo" src="img/gallery/other/AR/logo_rwo_lg.png" alt="realwordone logo">
+                            <!--<p class="halo-text">test</p>-->
+                            <span class="halo"></span>
+                            <img class="halo-blur" src="img/gallery/other/history-in-hd-e5eDHbmHprg-unsplash.jpg"
+                                alt="https://unsplash.com/photos/astronaut-standing-on-gray-sand-e5eDHbmHprg?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">
                         </div>
                     </a>
                 </div>
@@ -140,13 +160,16 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="box1ModalLabel">Title</h5>
+                    <h5 class="modal-title" id="box1ModalLabel">NASA</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <figure>
-                        <img src="#" alt="full">
+                        <img src="img/gallery/nasa/armars4.PNG" alt="full" style="max-width: 60%;">
                     </figure>
+                    <p>NASA Mars Exploration immersive app is a fun edutainment game. Click here to walk through the
+                        prototype: <a href="https://xd.adobe.com/view/2602b7f1-1774-4e42-bd30-5967b916fde7-7351/
+grid/" target="_blank">NASA Mars Exploration XR App</a></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -159,13 +182,34 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="box2ModalLabel">Title</h5>
+                    <h5 class="modal-title" id="box2ModalLabel">IVOW</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <figure>
-                        <img src="#" alt="full">
-                    </figure>
+                    <div class="brief">
+                        <h4>Hotel Concierge AI Chatbot &amp; ML Trainer</h4>
+                        <p style="text-align: left;">An AI agent that learns from interactions with hospitality
+                            professionals and
+                            travel/accommodation customers. The platform features a hyperintelligent knowledge base
+                            (KB) that hospitality users can reference, and the AI agent can provide suggestions. Click
+                            here to view the interaction: <a href="https://youtu.be/ohtAEgcJjv0" alt="video"
+                                target="_blank">Hotel AI Agent
+                                Flow</a></p>
+                    </div>
+                    <div class="brief-show">
+                        <!--  <span class="overlay-click-video">
+                            <h4>Click here to view
+                                prototype</h4>
+                        </span> -->
+                        <ul>
+                            <li>
+                                <img class="ai-agent-sub" src="img/gallery/ivow/01_ai_agent_hotel.png" alt="full">
+                            </li>
+                            <li>
+                                <img src="img/gallery/ivow/02_ai_agent_hotel.png" alt="" style="width:45%">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -183,7 +227,7 @@
                 </div>
                 <div class="modal-body">
                     <figure>
-                        <img src="img/gallery/other/journey_app_AR.png" alt="journey app full">
+                        <img src="img/gallery/other/AR/journey_app_AR.png" alt="journey app full">
                     </figure>
                 </div>
                 <div class="modal-footer">
@@ -197,12 +241,12 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="box4ModalLabel">Title</h5>
+                    <h5 class="modal-title" id="box4ModalLabel">BlockShare</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <figure>
-                        <img src="#" alt="full">
+                        <img src="img/gallery/other/web3/BlockShare_Landing.png" alt="full" style="max-width: 50%;">
                     </figure>
                 </div>
                 <div class="modal-footer">
@@ -216,13 +260,16 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="box5ModalLabel">Title</h5>
+                    <h5 class="modal-title" id="box5ModalLabel">OctopAI</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <figure>
-                        <img src="#" alt="full">
+                        <img src="img/gallery/other/AI/OctopAI - Results.png" alt="full" style="max-width: 55%;">
                     </figure>
+                    <p>OctopAI provides intelligent analysis for user interviews, powered by ChatGPT. Click here to
+                        interact with the LLM chatbot: <a href="https://octopaihack.web.app" target="_blank">OctopAI
+                            demo</a></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -235,13 +282,24 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="box6ModalLabel">Title</h5>
+                    <h5 class="modal-title" id="box6ModalLabel">realworldone</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <figure>
-                        <img src="#" alt="full">
-                    </figure>
+                    <div class="brief">
+                        <h4>XR Life Science Operations Solution</h4>
+                        <p style="text-align: left;">An immersive conferencing, training, &amp; support tool for the
+                            global life science
+                            community. The product offers seamless integration via mobile with AR, desktop, and VR
+                            environments.</p>
+                    </div>
+                    <div class="brief-show rwo">
+                        <ul>
+                            <!-- <li><img src="img/gallery/other/AR/rwo-ar-all-options.png" alt="rwo-light-mode"></li> -->
+                            <li><img src="img/gallery/other/AR/rwo-ar-caller-view.png" alt="rwo-dark-mode"></li>
+                            <li><img src="img/gallery/other/AR/rwo-vr-home.png" alt="rwo-holo-mode"></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -292,20 +350,7 @@
     <!--/Main -->
 
     <!-- Footer -->
-    <section id="footer">
-        <div class="container">
-            <div class="nav navbar-nav navbar">
-                <ul>
-                    <li><span class="copyright">&copy;
-                            <script type="text/javascript">document.write(new Date().getFullYear());</script>
-                        </span><span> Juanisa J. McCoy | UI/UX Designer</span><span class="made"><span class="heart"><i
-                                    class="material-icons" color="#FFF" ;>favorite</i></span><span>Web,
-                                Mobile, VR/AR, Conversational AI</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <div id="footerComponent"></div>
     <!--/Footer -->
 
     <!-- NavBar component script -->
@@ -314,6 +359,15 @@
             .then((response) => response.text())
             .then((content) => {
                 document.getElementById("navbarComponent").innerHTML = content;
+            });
+    </script>
+
+    <!-- Footer component script -->
+    <script>
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((content) => {
+                document.getElementById("footerComponent").innerHTML = content;
             });
     </script>
 

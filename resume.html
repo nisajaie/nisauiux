@@ -249,19 +249,7 @@
   <!--/Activities &amp; Recognition -->
 
   <!-- Footer -->
-  <section id="footer">
-    <div class="container">
-      <div class="nav navbar-nav navbar">
-        <ul>
-          <li><span class="copyright">&copy;
-              <script type="text/javascript">document.write(new Date().getFullYear());</script>
-            </span><span> Juanisa J. McCoy | UI/UX Designer</span><span class="made"><span class="heart"><i
-                  class="material-icons" color="#FFF" ;>favorite</i></span><span>Web, Mobile, VR/AR, Conversational
-                AI</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <div id="footerComponent"></div>
   <!--/Footer -->
 
   <!-- NavBar component script -->
@@ -270,6 +258,15 @@
       .then((response) => response.text())
       .then((content) => {
         document.getElementById("navbarComponent").innerHTML = content;
+      });
+  </script>
+
+  <!-- Footer component script -->
+  <script>
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((content) => {
+        document.getElementById("footerComponent").innerHTML = content;
       });
   </script>
 
