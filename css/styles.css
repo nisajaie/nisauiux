@@ -497,10 +497,8 @@ Body Content
 #role,
 #ia,
 #dev,
-#design,
-#bento-box {
+#design {
 	background-color: #f2fbff;
-	/* background-color: #fbfbfb; */
 }
 .case-title {
 	color: var(--nj-grey-dark);
@@ -533,8 +531,7 @@ Body Content
 #proto,
 #dev,
 #design,
-#summary,
-#bento-box {
+#summary {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
@@ -979,8 +976,8 @@ figcaption {
 	-webkit-animation-delay: 1s;
 }
 .gallery {
-	padding-bottom: 25px;
-	padding-top: 20px;
+	padding-top: 63px;
+	padding-bottom: 47px;
 }
 .gallery p,
 .gallery .disclaimer,
@@ -1042,8 +1039,19 @@ figcaption {
 }
 
 /* Section: Bento */
+
+#bento-box {
+	padding-top: 1px;
+	padding-bottom: 40px;
+	background-color: #f1f5f7;
+}
+
+#bento-box h1 {
+	color: var(--nj-purple);
+}
+
 .bento-inner {
-	padding-top: 3rem;
+	padding-top: 1rem;
 }
 
 .bento-item {
@@ -1183,6 +1191,42 @@ main {
 	position: relative;
 	top: 198px;
 	width: 200px;
+}
+
+.feature-area .bento-item {
+	background-image: linear-gradient(var(--nj-bg-gradient));
+}
+
+.feature-area .bento-item h5 {
+	color: var(--white);
+}
+
+.bento-float-1 {
+	position: relative;
+	left: 117px;
+	opacity: 75%;
+	font-size: 5rem;
+}
+
+.bento-float-2 {
+	position: relative;
+	left: 117px;
+	opacity: 75%;
+	font-size: 5rem;
+}
+
+.bento-float-3 {
+	position: relative;
+	left: 117px;
+	opacity: 75%;
+	font-size: 5rem;
+}
+
+.bento-float-4 {
+	position: relative;
+	left: 117px;
+	opacity: 75%;
+	font-size: 5rem;
 }
 
 /* .overlay-click-video {
